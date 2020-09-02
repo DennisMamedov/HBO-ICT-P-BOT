@@ -12,11 +12,3 @@ export class PingCommand implements ICommand {
         return true;
     }
 }
-
-/*
-    name: string
-    exec(commandContext : CommandContext) : void
-    description: string,
-    aliases: string[],
-    checkPermission(commandContext : CommandContext) : boolean;
-*/

@@ -25,6 +25,10 @@ export class Bot {
         })
     }
 
+    getClient() : Client {
+        return this.client;
+    }
+
     private initClient() : void {
         if(!this.client) return;
         handleEvents(this.client);
