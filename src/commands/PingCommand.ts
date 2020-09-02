@@ -12,3 +12,11 @@ export class PingCommand implements ICommand {
         return true;
     }
 }
+
+/*
+    This will be the template for commands.
+
+    Copy this file and refactor all variables accordingly. The exec function contains the logic.
+
+    Import this class into ../CommandHandler.ts and add it to commandClassList in the constructor.
+*/

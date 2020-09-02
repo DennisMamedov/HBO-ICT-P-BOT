@@ -16,17 +16,20 @@ export class CommandHandler {
         this.prefix = prefix;
     }
 
+    // Method that reacts to message events from discord
     handleMessage(message: Message) : void {
 
         if(message.author.bot) return;
         if(message.content.startsWith(this.prefix)) {
             
-            // This is a commandsyntax (starts with prefix)
+            // Context with prefix, commandname, arguments and message object
             const commandContext : CommandContext = new CommandContext(message, this.prefix);
 
             // TODO: make this more efficient lol
+            // All commands the member has access to.
             const permissionLevelCommands = this.ClientCommands.filter(command => command.checkPermission(commandContext));
 
+            // The command that is being called.
             const propCommand = this.ClientCommands.find(command => command.aliases.includes(commandContext.commandName));
 
             if(!propCommand) {

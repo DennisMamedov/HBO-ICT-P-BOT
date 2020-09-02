@@ -8,3 +8,4 @@ export default interface ICommand {
     aliases: string[],
     checkPermission(commandContext : CommandContext) : boolean;
 }
+

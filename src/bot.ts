@@ -1,6 +1,9 @@
 import { Client, Message, Collection } from 'discord.js';
 import handleEvents from './eventHandler';
 
+
+// Singleton for the discord client
+
 export class Bot {
     private static instance: Bot;
 
@@ -17,6 +20,7 @@ export class Bot {
         return Bot.instance;
     }
 
+    // Log in with token (stored in /static/env/token.env)
     connect() : void {
         this.client.login(process.env.TOKEN).then(_ => {
             console.log('Connection to Discord established!');

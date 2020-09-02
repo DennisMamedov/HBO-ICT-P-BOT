@@ -5,6 +5,7 @@ import { CommandHandler } from './CommandHandler';
 
 export default function handleEvents(client : Client) {
 
+    // TODO: move prefix to config file
     const commandHandler : CommandHandler = new CommandHandler("*");
 
     client.on("ready", () => console.log());
@@ -12,3 +13,7 @@ export default function handleEvents(client : Client) {
     client.on("message", (m) => commandHandler.handleMessage(m));
 
 }
+
+/*
+    All events should be handled here.
+ */

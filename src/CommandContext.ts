@@ -16,3 +16,7 @@ export class CommandContext {
     
     }
 }
+
+/*
+    This makes a pretty context from a message object from discord.
+*/
