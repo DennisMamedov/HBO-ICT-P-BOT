@@ -1,0 +1,70 @@
+.env
+
+# compiled output
+/dist
+/tmp
+
+# dependencies
+/node_modules
+/bower_components
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage/*
+/libpeerconnection.log
+npm-debug.log
+testem.log
+
+.*cache
+*.log
+cache/*
+backup
+_files
+log
+log/**/*
+.monitor
+Forwardfile
+/static/env/*
+
+# OS X Files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.lnk
+*~
+
+# IDE FILES
+*.sublime-*
+*.tmproj
+
+# BOWER & BUILD TOOLS
+/build/*
+/bower_components/*
+
+
+# ZEUS
+zeus.json
+custom_plan.rb
+
+# NODE
+.node_modules
+node_modules
+*/node_modules
+/node_modules/*
+
+# SYMFONY
+/web/bundles/
+/app/bootstrap*
+/app/cache/*
+/app/logs/*
+/vendor/
+/app/config/parameters.yml
+composer.phar
+
+# DRUPAL
+sites/*/settings*.php
+sites/*/files
+sites/*/private
+static/env/token.env
