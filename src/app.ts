@@ -1,7 +1,7 @@
 import { Bot } from './bot';
 import { Client } from 'discord.js';
 
-require('dotenv').config({path: "static/env/token.env"});
+require('dotenv').config();
 
 const bot = Bot.getInstance();
 bot.connect();

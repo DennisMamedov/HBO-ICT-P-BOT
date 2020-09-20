@@ -3,7 +3,7 @@ Voor de memes.
 
 `yarn install` en `yarn build` om de bot te builden. `yarn start` om te starten  
 
-Voeg wel een static/env/TOKEN.env toe met inhoud:  
+Voeg wel een /.env toe met inhoud:  
 ```
 TOKEN="token"
 ```  
